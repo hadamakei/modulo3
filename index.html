@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;600&display=swap" rel="stylesheet">
+    <title>Keila Hadama</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="kei.png" alt=" logo keikei" size="5%">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/hadamakei"> github </a>
+            </li>
+            <li> 
+                <a target="_blank" href="mailto:hadamakei@gmail.com"> email</a> 
+            </li>
+            <li> 
+                <a target="_blank" href="https://wa.me/11000099999"> whatsapp </a> 
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1> Keila Hadama </h1>
+                <h5> Future Front-End Developer </h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-angle-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p> 
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                     Amet quae quaerat eligendi accusamus ad tenetur, illo harum quos facilis fugit vitae perspiciatis dolores optio placeat, suscipit deserunt sit! Dolorum, sequi.
+                </p> 
+                <!-- <div class="flex">
+                    <div>
+                        <img src="./icon.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Obcaecati laboriosam eius quae saepe dignissimos pariatur delectus quaerat laudantium dicta numquam, nostrum quod cupiditate consectetur nam inventore modi possimus iste repellendus.</p>
+                    </div>
+
+                    <div>
+                        <img src="./icone.png.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Obcaecati laboriosam eius quae saepe dignissimos pariatur delectus quaerat laudantium dicta numquam, nostrum quod cupiditate consectetur nam inventore modi possimus iste repellendus.</p>
+                    </div>
+
+                    <div>
+                        <img src="./icone.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Obcaecati laboriosam eius quae saepe dignissimos pariatur delectus quaerat laudantium dicta numquam, nostrum quod cupiditate consectetur nam inventore modi possimus iste repellendus.</p>
+                    </div>
+                </div> -->
+            </div>
+            
+            <div class="form">
+                <div>
+                    <p> deixe seu contato</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor email :)">
+                    <button>enviar!</button>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
